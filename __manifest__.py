@@ -14,7 +14,7 @@
     'category': 'Productivity',
     'depends': ['base', 'web', 'sale', 'board'],
     'data': [
-        'views/sales_dashboard_menu.xml',
+        'views/custom_dashboard_menu.xml',
     ],
     'demo': [
     ],

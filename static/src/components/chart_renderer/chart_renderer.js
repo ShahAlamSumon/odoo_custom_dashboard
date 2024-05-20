@@ -2,6 +2,7 @@
 
 import { registry } from "@web/core/registry"
 import { loadJS } from "@web/core/assets"
+import { useService } from "@web/core/utils/hooks"
 const { Component, onWillStart, useRef, onMounted } = owl
 
 export class ChartRenderer extends Component {
@@ -13,6 +14,7 @@ export class ChartRenderer extends Component {
 
         onMounted(()=>this.renderChart())
     }
+
 
     renderChart(){
         new Chart(this.chartRef.el,
